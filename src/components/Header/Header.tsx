@@ -1,7 +1,10 @@
 import Link from "next/link";
+import ThemeToggleButton from "../Buttons/ThemeToggleButton";
 import DesktopNav from "./DesktopNav";
+import MobileNav from "./MobileNav";
 
 const Header = () => {
+  
   return (
     <header
       className="fixed top-0 right-0 left-0 z-50 border-b shadow"
@@ -15,6 +18,15 @@ const Header = () => {
           </h1>
         </Link>
 
+        {/* Mobile Nav Items  */}
+        <nav
+          className="flex items-center gap-3 md:hidden"
+          aria-label="Nav-Items">
+          <ThemeToggleButton />
+          <MobileNav />
+        </nav>
+
+        {/* Desktop Nav Items  */}
         <nav
           className="hidden md:flex md:items-center md:gap-4"
           aria-label="Nav-Items">

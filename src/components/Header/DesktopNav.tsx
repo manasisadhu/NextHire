@@ -14,8 +14,8 @@ const DesktopNav = () => {
       {/* Candidate landing page link  */}
       <Link
         href="/"
-        className={`hover:text-blue-500 dark:hover:text-blue-300 ${
-          path === "/" ? "text-blue-500 dark:text-blue-300" : ""
+        className={`hover:text-blue-600 dark:hover:text-blue-400 ${
+          path === "/" ? "text-blue-600 dark:text-blue-400" : ""
         }`}>
         Find Jobs
       </Link>
@@ -23,8 +23,8 @@ const DesktopNav = () => {
       {/* post job landing page link  */}
       <Link
         href={"/post-jobs"}
-        className={`hover:text-blue-500 dark:hover:text-blue-300 ${
-          path === "/post-jobs" ? "text-blue-500 dark:text-blue-300" : ""
+        className={`hover:text-blue-600 dark:hover:text-blue-400 ${
+          path === "/post-jobs" ? "text-blue-600 dark:text-blue-400" : ""
         }`}>
         Recruiter/Post Jobs
       </Link>
@@ -37,7 +37,7 @@ const DesktopNav = () => {
       {/* sign in link  */}
       <Link
         href={"/auth/signin"}
-        className="hover:text-blue-500 dark:hover:text-blue-300">
+        className="hover:text-blue-600 dark:hover:text-blue-400">
         Sign in
       </Link>
 
@@ -45,7 +45,7 @@ const DesktopNav = () => {
       <Link href="/auth/signup">
         <Button
           variant="outline"
-          className="hover:bg-blue-500 hover:text-white dark:hover:bg-blue-400">
+          className="hover:text-blue-600 dark:hover:text-blue-400">
           Sign up
         </Button>
       </Link>
