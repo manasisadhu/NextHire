@@ -1,15 +1,18 @@
+"use client";
+
 import Link from "next/link";
-import ThemeToggleButton from "../Buttons/ThemeToggleButton";
-import DesktopNav from "./DesktopNav";
-import MobileNav from "./MobileNav";
+import { usePathname } from "next/navigation";
+import AuthNav from "./AuthNav";
+import LandingNav from "./LandingNav";
 
 const Header = () => {
-  
+  const path = usePathname();
   return (
     <header
-      className="fixed top-0 right-0 left-0 z-50 border-b shadow"
+      className={`fixed top-0 right-0 left-0 z-50 ${path === "/auth/signup" || path === "/auth/signin" ? "backdrop-blur-md" : "border-b shadow"}`}
       aria-label="app-header">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
+        {/* Logo  */}
         <Link href={"/"}>
           <h1
             className="text-2xl font-semibold"
@@ -18,20 +21,10 @@ const Header = () => {
           </h1>
         </Link>
 
-        {/* Mobile Nav Items  */}
-        <nav
-          className="flex items-center gap-3 md:hidden"
-          aria-label="Nav-Items">
-          <ThemeToggleButton />
-          <MobileNav />
-        </nav>
-
-        {/* Desktop Nav Items  */}
-        <nav
-          className="hidden md:flex md:items-center md:gap-4"
-          aria-label="Nav-Items">
-          <DesktopNav />
-        </nav>
+        {/* swith nav Items  */}
+        {path === "/auth/signup" || path === "/auth/signin" ?
+          <AuthNav />
+        : <LandingNav />}
       </div>
     </header>
   );

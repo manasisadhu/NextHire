@@ -1,4 +1,3 @@
-import Header from "@/components/Header/Header";
 import ThemeProvider from "@/components/Providers/ThemeProvider";
 import { geistMono, geistSans } from "@/lib/fonts";
 import { Metadata } from "next";
@@ -26,8 +25,6 @@ const RootLayout = ({ children }: RootLayoutProps) => {
           attribute={"class"}
           defaultTheme="dark"
           enableSystem={false}>
-          <Header />
-
           <main>{children}</main>
         </ThemeProvider>
       </body>
