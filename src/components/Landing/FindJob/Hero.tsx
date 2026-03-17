@@ -3,9 +3,9 @@ import Link from "next/link";
 
 const Hero = () => {
     return (
-        <section className="flex flex-col items-center gap-4">
-        <div className="text-6xl font-bold text-blue-900 ">Where Talent Meets Opportunity</div> 
-        <div className="text-3xl font-light  ">Explore opportunities, showcase your skills, and get hired faster
+        <section className="flex flex-col items-center gap-4 p-8 text-center">
+        <div className="text-4xl md:text-6xl font-bold text-blue-900 ">Where Talent Meets Opportunity</div> 
+        <div className="text-xl md:text-3xl font-light ">Explore opportunities, showcase your skills, and get hired faster
             </div> 
            
 
