@@ -1,5 +1,5 @@
 const page = () => {
-  return <section className="grid h-dvh place-items-center">Signin</section>;
+  return <section className="grid h-dvh place-items-center">Sigin</section>;
 };
 
 export default page;
