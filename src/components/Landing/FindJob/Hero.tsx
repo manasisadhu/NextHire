@@ -5,8 +5,10 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <section className="space-y-4 text-center">
+      {/* badge  */}
+
       <div className="mx-auto flex w-3xs cursor-pointer justify-center gap-4 rounded-full border border-black/24 bg-white/2 py-1.5 hover:bg-white/3 dark:border-white/24">
-        <BriefcaseBusinessIcon /> <span>|</span> For Job Seekers{" "}
+        <BriefcaseBusinessIcon /> <span>|</span> For Job Seekers
         <ChevronRightIcon />
       </div>
 
