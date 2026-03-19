@@ -1,5 +1,6 @@
 import CandidateAdvantages from "@/components/Landing/FindJob/CandidateAdvantages";
 import Hero from "@/components/Landing/FindJob/Hero";
+import FooterTop from "@/components/Landing/FooterTop";
 import OurGrowingNetwork from "@/components/Landing/OurGrowingNetwork";
 import { candidateAdvantageCardDetails } from "@/lib/information";
 
@@ -34,7 +35,6 @@ const page = () => {
         </section>
 
         {/* Our achivment / Growing  Network section  */}
-
         <section className="space-y-6 pb-24 text-center">
           <h3 className="text-2xl font-bold md:text-4xl">
             Our Growing Network
@@ -45,6 +45,10 @@ const page = () => {
           </p>
 
           <OurGrowingNetwork />
+        </section>
+
+        <section className="pb-24">
+          <FooterTop />
         </section>
       </section>
     </section>
